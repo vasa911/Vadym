@@ -1,0 +1,9 @@
+{
+    "Html": "/Vadym/viewmodels/AddressPage.html",
+    "Street$": "",
+    "Number$": "",
+    "ZipCode$": "",
+    "City$": "",
+    "Country$": "",
+    "FullAddress": ""
+}

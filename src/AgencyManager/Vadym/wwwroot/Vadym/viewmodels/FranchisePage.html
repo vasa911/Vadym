@@ -1,0 +1,51 @@
+﻿<link rel="import" href="/sys/polymer/polymer.html">
+<link rel="import" href="/sys/puppet-redirect/puppet-redirect.html" />
+
+
+<template>
+    <template is="dom-bind">
+
+        <a href="http://localhost:8080/Vadym/start">< < Back to start</a>
+
+        <h3>Settings: {{model.Name$}} </h3>
+        <h4>Edit franchise settings </h4>
+
+        <fieldset style="margin-top:20px">
+            <label>Name:</label>
+            <input value="{{model.Name$::input}}">
+        </fieldset>
+
+        <starcounter-include partial="{{model.Address}}"></starcounter-include>
+
+        <button class="btn btn-sm btn-default" value="{{model.SaveFranchiseSettingsTrigger$::click}}" onmousedown="++this.value">Save</button>
+
+        <starcounter-include partial="{{model.NewTransaction}}"></starcounter-include>
+
+        <h4>List of transactions</h4>
+
+        <table style="max-width:800px" class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Sales Price</th>
+                    <th>Commission</th>
+                    <th>Address</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <template is="dom-repeat" items="{{model.ListTransactions}}">
+                    <tr>
+                        <td>{{item.Date}}</td>
+                        <td>{{item.SalesPrice}}</td>
+                        <td>{{item.Commission}}</td>
+                        <td>{{item.Home.Address.FullAddress}}</td>
+                    </tr>
+                </template>
+            </tbody>
+
+        </table>
+     
+
+    </template>
+</template>

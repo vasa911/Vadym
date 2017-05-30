@@ -1,0 +1,11 @@
+{
+    "Html": "/Vadym/viewmodels/TransactionCreationPage.html",
+    "Date$": "",
+    "SalesPrice$": 0,
+    "Commission$": 0,
+    "RegisterNewTransaction$": 0,
+    "TransactionHomeAddress": {},
+
+    "PostOnFacebook$": false,
+    "RedirectUrl$": ""
+}

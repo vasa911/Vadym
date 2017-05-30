@@ -1,0 +1,36 @@
+﻿<link rel="import" href="/sys/polymer/polymer.html">
+<link rel="import" href="/sys/puppet-redirect/puppet-redirect.html" />
+
+<template>
+    <template is="dom-bind">
+        <h5>Register new Home of sale</h5>
+
+        <starcounter-include partial="{{model.TransactionHomeAddress}}"></starcounter-include>
+
+
+        <h5>Transaction info</h5>
+
+        <fieldset>
+            <label>Date (format "2017-01-01"):</label>
+            <input value="{{model.Date$::input}}">
+        </fieldset>
+
+        <fieldset>
+            <label>Sales price:</label>
+            <input value="{{model.SalesPrice$::input}}">
+        </fieldset>
+
+        <fieldset>
+            <label>Commission:</label>
+            <input value="{{model.Commission$::input}}">
+        </fieldset>
+
+        <div style="margin-top:10px; padding:5px">
+            <button class="btn btn-sm btn-default" value="{{model.RegisterNewTransaction$::click}}" onmousedown="++this.value">Register</button>
+            <input style="margin-left:10px" type="checkbox" checked="{{model.PostOnFacebook$::change}}">
+            <label>Post on Facebook wall</label>
+
+            <link is="puppet-redirect" url="{{model.RedirectUrl$}}" />
+        </div>
+    </template>
+</template>

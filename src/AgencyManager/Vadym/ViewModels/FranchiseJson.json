@@ -1,0 +1,22 @@
+{
+    "Html": "/Vadym/viewmodels/FranchisePage.html",
+    "Name$": "",
+    "Url$": "",
+    "Address": {},
+    "NewTransaction": {},
+    "SaveFranchiseSettingsTrigger$": 0,
+    "ListTransactions": [
+        {
+            "Date": "",
+            "SalesPrice": 0,
+            "Commission": 0,
+            "Home": {
+                "Address": {
+                    "FullAddress": ""
+                }
+            }
+        }
+    ],
+
+    "FacebookAccessToken": "",
+}

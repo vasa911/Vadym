@@ -1,0 +1,37 @@
+﻿<link rel="import" href="/sys/polymer/polymer.html">
+
+
+<template>
+    <template is="dom-bind">
+
+        <fieldset>
+            <label>Street:</label>
+            <input value="{{model.Street$::input}}">
+        </fieldset>
+
+        <fieldset>
+            <label>Number:</label>
+            <input value="{{model.Number$::input}}">
+        </fieldset>
+
+        <fieldset>
+            <label>ZipCode:</label>
+            <input value="{{model.ZipCode$::input}}">
+        </fieldset>
+
+        <fieldset>
+            <label>City:</label>
+            <input value="{{model.City$::input}}">
+        </fieldset>
+
+        <fieldset>
+            <label>Country:</label>
+            <input value="{{model.Country$::input}}">
+        </fieldset>
+
+        <fieldset>
+            <label>Full Address:</label>
+            <label>{{model.FullAddress}}</label>
+        </fieldset>
+    </template>
+</template>

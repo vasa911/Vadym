@@ -1,0 +1,13 @@
+{
+    "Html": "/Vadym/viewmodels/CorporationPage.html",
+    "Name": "",
+    "NewFranchiseOfficeName$": "",
+    "CreateNewFranchiseOfficeTrigger$": 0,
+    "FranchiseOffices": [ {} ],
+    "PartialPage": {},
+
+    "SortByNumberOfHomesTrigger$": 0,
+    "SortByTotalCommissionTrigger$": 0,
+    "SortByAverageCommissionTrigger$": 0,
+    "SortByTrendTrigger$": 0
+}
